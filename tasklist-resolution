@@ -1,0 +1,15 @@
+Premendo il pulsante "scatta foto con microcamera" le andava in errore, non aprima mic fi e non le faceva fare nulla.
+
+- controllate se ha nodejs installato (node -v)
+- controllate npm (npm -v)
+- lanciate da terminale il comando "tasklist". se va a buon fine dovrebbe essersi risolto.
+
+Se ancora il pc non lo riconosce si devono lanciare ulteriori comandi: (da usare con attenzione)
+cd \windows\system32\wbem
+net stop winmgmt
+rename Repository Repository.old
+net start winmgmt
+
+dopo di cio riprova il comando tasklist, se funziona allora tutto risolto.
+
+digitando Ctrl + Shift + I e successivamente 1234 vi si aprirà la console degli sviluppatori e vedere gli eventuali errori
